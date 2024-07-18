@@ -22,6 +22,8 @@ const Home = () => {
   return (
     <div className="home">
       <BlogLists blogs={blogs} title='All Blogs!'/>
+      <BlogLists blogs={blogs.filter(blog=>blog.author === 'mario')} title="Mario's Blogs!"/>
+
       {/* {blogs.map((blog)=>(
             <div className='blog-preview' key={blog.id}>
                 <h2>{blog.title}</h2>
