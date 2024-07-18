@@ -1,7 +1,7 @@
 const BlogLists = ({ blogs , title }) => {
-    const blogs=props.blogs
-    const title=props.title
-    console.log(props)
+    // const blogs=props.blogs
+    // const title=props.title
+    // console.log(props)
     return (  
         <div className="home">
         {blogs.map((blog)=>(
