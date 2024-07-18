@@ -1,18 +1,18 @@
 import {useState} from 'react'
 
 const Home = () => {
-    const [count,setCount] = useState(0)
-    const handleClick=()=>{
-        console.log('clicked')
-    }
+    // const [count,setCount] = useState(0)
+    // const handleClick=()=>{
+    //     console.log('clicked')
+    // }
     const [blogs,setBlogs]=useState([
         { title: 'My new website', body: 'lorem ipsum...', author: 'mario', id: 1 },
         { title: 'Welcome party!', body: 'lorem ipsum...', author: 'yoshi', id: 2 },
         { title: 'Web dev top tips', body: 'lorem ipsum...', author: 'mario', id: 3 }
     ])
-    const handleClickAgain=(name,e)=>{
-        console.log('clicked again by'+ name,e.target)
-    }
+    // const handleClickAgain=(name,e)=>{
+    //     console.log('clicked again by'+ name,e.target)
+    // }
     return (
       <div className="home">
         {blogs.map((blog)=>(
